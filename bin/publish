@@ -1,15 +1,15 @@
 #!/bin/zsh
 
 # Clean artifacts
-rm style.css
-rm style.css.map
+rm style/style.css
+rm style/style.css.map
 rm billros.si.tar.gz
 
 # Generate css
-sass style.scss style.css
+sass style/style.scss style/style.css
 
 # Tar it up
-tar czf billros.si.tar.gz index.html style.css
+tar czf billros.si.tar.gz index.html style
 
 # Upload it
 open https://hpanel.hostinger.com/hosting/billros.si/website/import-website

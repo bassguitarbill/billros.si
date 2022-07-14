@@ -1,9 +1,10 @@
+// @use 'spring' as *;
+@use 'summer' as *;
+// @use 'autumn' as *;
+// @use 'winter' as *;
+
 $font-edu-vic: 'Edu VIC WA NT Beginner', cursive;
 $font-righteous: 'Righteous', cursive;
-
-$color-bg:          #2b0202;
-$color-logo:        #e0a94a;
-$color-logo-shadow: #db832a;
 
 body {
   margin: 0px;
