@@ -1,0 +1,35 @@
+$font-edu-vic: 'Edu VIC WA NT Beginner', cursive;
+
+$color-bg:          #2b0202;
+$color-logo:        #e0a94a;
+$color-logo-shadow: #db832a;
+
+body {
+  margin: 0px;
+  background-color: $color-bg;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 2%;
+}
+
+.logo {
+  font-family: $font-edu-vic; 
+  font-size: 36pt;
+  color: $color-logo;
+  filter: drop-shadow(3px 4px 0px $color-logo-shadow);
+  text-decoration: underline dotted;
+}
+
+nav {
+  ul {
+    margin: 0%;
+    li {
+      display: inline;
+    }
+  }
+}
+
