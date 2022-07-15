@@ -1,14 +1,15 @@
-// @use 'spring' as *;
-@use 'summer' as *;
-// @use 'autumn' as *;
-// @use 'winter' as *;
-
 $font-edu-vic: 'Edu VIC WA NT Beginner', cursive;
 $font-righteous: 'Righteous', cursive;
 
+:root {
+  --background-color: #76BA99;
+  --logo-color: #CED89E;
+  --logo-shadow-color: #ADCF9F;
+}
+
 body {
   margin: 0px;
-  background-color: $color-bg;
+  background-color: var(--background-color);
   color: white;
 }
 
@@ -21,8 +22,8 @@ header {
 .logo {
   font-family: $font-edu-vic; 
   font-size: 36pt;
-  color: $color-logo;
-  filter: drop-shadow(3px 4px 0px $color-logo-shadow);
+  color: var(--logo-color);
+  filter: drop-shadow(3px 4px 0px var(--logo-shadow-color));
   text-decoration: underline dotted;
 }
 
@@ -36,26 +37,32 @@ nav {
       display: inline;
       list-style: none;
       a {
-        color: $color-logo-shadow;
+        color: var(--logo-shadow-color);
         font-size: 24pt;
         padding-left: 12pt;
         text-decoration: none;
       }
-      a:hover {
-        color: $color-logo;
-        filter: drop-shadow(1px 1px 0px $color-logo-shadow);
-        animation-name: light-up;
-        animation-duration: 0.5s;
-      }
     }
+    li:hover {
+      color: var(--logo-color);
+      filter: drop-shadow(1px 1px 0px var(--logo-shadow-color));
+      animation-name: light-up;
+      animation-duration: 0.5s;
+    }
+  }
+  ul.season {
+    color: var(--logo-shadow-color);
+    padding-left: 0px;
+    font-size: 30pt;
+    cursor: pointer;
   }
 }
 
 @keyframes light-up {
   0% {
-    color: $color-logo-shadow;
+    color: var(--logo-shadow-color);
   }
   100% {
-    color: $color-logo;
+    color: var(--logo-color);
   }
 }

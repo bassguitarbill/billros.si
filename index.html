@@ -5,11 +5,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Righteous&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
       <span class="logo">billros.si</span>
       <nav>
+        <ul class="season">
+          <li onclick="setSeason('spring')"><span class="material-symbols-outlined">eco</span></li>
+          <li onclick="setSeason('summer')"><span class="material-symbols-outlined">sunny</span></li>
+          <li onclick="setSeason('autumn')"><span class="material-symbols-outlined">park</span></li>
+          <li onclick="setSeason('winter')"><span class="material-symbols-outlined">ac_unit</span></li>
+        </ul>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="https://github.com/bassguitarbill">Github</a></li>
