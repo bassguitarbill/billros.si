@@ -9,7 +9,7 @@ rm billros.si.tar.gz
 sass style/style.scss style/style.css
 
 # Tar it up
-tar czf billros.si.tar.gz index.html style
+tar czf billros.si.tar.gz index.html style js
 
 # Upload it
 open https://hpanel.hostinger.com/hosting/billros.si/website/import-website
