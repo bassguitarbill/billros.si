@@ -94,6 +94,10 @@ section {
   }
 }
 
+a {
+  color: var(--logo-color);
+}
+
 @keyframes light-up {
   0% {
     color: var(--logo-shadow-color);
